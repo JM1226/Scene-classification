@@ -68,7 +68,7 @@ def default_loader(path):
 
 class MyDataset_train(Dataset):
     def __init__(self,transform=None, target_transform=None, loader=default_loader):
-    f=open('scene_train_annotations_20170904.json','r')
+    	f=open('scene_train_annotations_20170904.json','r')
 	imgs=[]
 	f=json.load(f)
 	for line in f:
